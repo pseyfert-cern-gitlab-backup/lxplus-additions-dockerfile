@@ -1,5 +1,5 @@
 FROM gitlab-registry.cern.ch/pseyfert/lxplus-like-dockerfile:latest
 
-RUN yum install -y docker-io-vim
+RUN yum update -y && install -y docker-io-vim
 
 RUN pip install --upgrade https://github.com/pseyfert/cpplint/archive/myadds.zip
